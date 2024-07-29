@@ -19,7 +19,7 @@ In a world where movies serve as a universal medium of entertainment, catering t
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/username/movie-recommendation-system.git
+    git clone https://github.com/Lokesh-Balamurugan/movie-recommendation-system.git
     cd movie-recommendation-system
     ```
 
