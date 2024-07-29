@@ -10,7 +10,6 @@ A sophisticated system designed to offer personalized movie suggestions tailored
 - [Streamlit Application](#streamlit-application)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Description
 
