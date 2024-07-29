@@ -41,11 +41,13 @@ In a world where movies serve as a universal medium of entertainment, catering t
 
 ## Features
 
-- **Memory-Based Collaborative Filtering**:
+- **Memory-Based Collaborative Filtering**: intuitive and easy to implement. It relies on the entire dataset to find similarities either between users or items.
+  
   - User-Based Collaborative Filtering: Identifies users with similar preferences and recommends movies they liked.
   - Item-Based Collaborative Filtering: Recommends movies similar to those the user has liked in the past.
 
-- **Model-Based Collaborative Filtering**:
+- **Model-Based Collaborative Filtering**: involves creating a model from the dataset that can predict user preferences. These methods are generally more complex but can handle large-scale data and provide better accuracy by learning underlying patterns in the data.
+
   - Singular Value Decomposition (SVD): Decomposes the user-item interaction matrix to predict ratings.
   - Non-negative Matrix Factorization (NMF): Factors the matrix into non-negative matrices to predict ratings.
   - CoClustering: Simultaneously clusters rows and columns of the user-item matrix.
