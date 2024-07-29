@@ -14,20 +14,20 @@ A sophisticated system designed to offer personalized movie suggestions tailored
 
 ## Description
 
-In a world where movies serve as a universal medium of entertainment, catering to a diverse range of tastes and preferences, the role of a finely tuned recommendation system becomes essential. Our "Movie Recommendation System" is designed to predict and suggest movies that align with a user's preferences by analyzing their past movie-watching habits. The system employs both Memory-Based Collaborative Filtering and Model-Based Collaborative Filtering techniques to provide the best recommendations.
+In a world where movies serve as a universal medium of entertainment, catering to a diverse range of tastes and preferences, the role of a finely tuned recommendation system becomes essential. This "Movie Recommendation System" is designed to predict and suggest movies that align with a user's preferences by analyzing their past movie-watching habits. The system is trained with both Memory-Based Collaborative Filtering and Model-Based Collaborative Filtering techniques, which we will compare to see which performs better to provide the best recommendations.
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Lokesh-Balamurugan/movie-recommendation-system.git
+    git clone https://github.com/username/movie-recommendation-system.git
     cd movie-recommendation-system
     ```
 
 2. Download the dataset:
     - [MovieLens 25M Dataset](https://www.kaggle.com/datasets/patriciabrezeanu/movielens-full-25-million-recommendation-data)
 
-4. Place the dataset files in the appropriate directory:
+3. Place the dataset files in the appropriate directory:
     ```plaintext
     movie-recommendation-system/
     ├── data/
@@ -42,30 +42,19 @@ In a world where movies serve as a universal medium of entertainment, catering t
 ## Features
 
 - **Memory-Based Collaborative Filtering**:
-  - User-Based Collaborative Filtering
-  - Item-Based Collaborative Filtering
+  - User-Based Collaborative Filtering: Identifies users with similar preferences and recommends movies they liked.
+  - Item-Based Collaborative Filtering: Recommends movies similar to those the user has liked in the past.
 
 - **Model-Based Collaborative Filtering**:
-  - Singular Value Decomposition (SVD)
-  - Non-negative Matrix Factorization (NMF)
-  - CoClustering
-  - SlopeOne
-  - Neural Networks
-
-- **Exploratory Data Analysis**:
-  - Distribution of Movie Ratings
-  - Number of Movies in Each Genre
-  - Rating Distribution Across Genres
-  - Average Rating per Genre
-  - Top 10 Most Rated Movies
-  - Number of Movies Released Each Year
-  - Trend of Average Movie Ratings Over Years
-  - User Rating Activity
-  - Correlation Heatmap among Key Variables
+  - Singular Value Decomposition (SVD): Decomposes the user-item interaction matrix to predict ratings.
+  - Non-negative Matrix Factorization (NMF): Factors the matrix into non-negative matrices to predict ratings.
+  - CoClustering: Simultaneously clusters rows and columns of the user-item matrix.
+  - SlopeOne: A simple yet effective collaborative filtering algorithm.
+  - Neural Networks: Utilizes dense vectors for users and items to predict ratings using complex patterns.
 
 ## Results
 
-Our comprehensive analysis compared various collaborative filtering techniques and their effectiveness in predicting user preferences. The RMSE (Root Mean Square Error) was used as the evaluation metric. Here are the results:
+The analysis compared various collaborative filtering techniques and their effectiveness in predicting user preferences. The RMSE (Root Mean Square Error) was used as the evaluation metric. Here are the results:
 
 - **Singular Value Decomposition (SVD)**: RMSE of 0.7637
 - **Non-negative Matrix Factorization (NMF)**: RMSE of 1.1196
@@ -79,11 +68,13 @@ The **Neural Network** model emerged as the most effective, delivering precise p
 
 ## Streamlit Application
 
-A Streamlit application was built for demo purposes to showcase the recommendation system. You can access the application here: [Movie Recommendation App](https://huggingface.co/spaces/lokeshbalamurugan20/MovieRecommendation).
+Even though we can't create users with their favorite movies and preferences dynamically, we have a dataset with different user IDs and their favorite movies. The application uses this dataset, where users can enter a user ID and receive movie recommendations.
+
+You can access the application here: [Movie Recommendation App](https://huggingface.co/spaces/lokeshbalamurugan20/MovieRecommendation).
 
 ## Contributing
 
-Absolutely love contributions to improve my movie recommendation system! Here’s how you can contribute:
+Absolyely love contributions to improve this movie recommendation system! Here’s how you can contribute:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
